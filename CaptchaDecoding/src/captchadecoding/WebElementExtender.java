@@ -60,6 +60,11 @@ package captchadecoding;
 	        
 	       int xcord = p.getX();
 	       
+	       if (xcord+width>576){
+	    	   
+		    	  xcord= (575-width);
+	       }
+	       
 	       int ycord = p.getY();
 	       
 	       if (ycord+height>576){
